@@ -25,11 +25,11 @@ void drawYellowBoard(void)
 
 void drawEmptyCircles(void)
 {
-  for(int j = 1; j < board_ROWS+1; j++)
+  for(int j = 0; j < board_ROWS; j++)
   {
-    for(int i = 1; i < board_COLS+1; i++)
+    for(int i = 0; i < board_COLS; i++)
     {
-        tft.fillCircle(16*i,24+(j*16),5,board[j][i]);
+        tft.fillCircle(16+(16*i),40+(j*16),5,board[j][i]);
     }
   }
 }
